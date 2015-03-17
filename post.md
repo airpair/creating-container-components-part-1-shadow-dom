@@ -13,7 +13,7 @@ Long, long ago we used backend template systems, which allowed us to separate an
 ```markup
 <!-- #include virtual="head.html" -->
 <!-- #include virtual="menu.html" -->
-I render in <!--#echo var="DATE_LOCAL" -->.
+I render in <!--#echo var="CONTAINER" -->.
 <!-- #include virtual="foot.html" -->
 ```
 
