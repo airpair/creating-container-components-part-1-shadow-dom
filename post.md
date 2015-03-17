@@ -296,7 +296,7 @@ Now that we've added the `ot-site` layout to our shadow DOM, the below is the co
 </ot-site>
 ```
 
-As a result, this is what we get when we use the `ot-site` tag. We get six tags, representing head, logo, menu, body, foot, and copyright as well as all the styles to lay them out for the price of a single tag.
+As a result, the image below is what we get when we use the `ot-site` tag. We get six tags, representing head, logo, menu, body, foot, and copyright as well as all the styles to lay them out for the price of a single tag.
 
 TODO: Insert Image (of empty `ot-site`)
 
