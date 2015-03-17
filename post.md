@@ -299,7 +299,7 @@ As a result, the image below is what we get when we use the `ot-site` tag. We ge
 
 TODO: Insert Image (of empty `ot-site`)
 
-But we still need to be able to add our content, so let's do something real with those placeholder comments.
+But we still need to be able to add our content, so let's address those placeholder comments.
 
 ### `<content>`
 
