@@ -258,7 +258,7 @@ Wondering about those backticks?  That's an ECMAScript 6 feature: template strin
 
 ### Composed DOM
 
-Now that we've added the `ot-site` layout to our shadow DOM below is the composite DOM we've actually created. `ot-site` is in the light DOM,  and it hosts a shadow root that contains the markup we want built into `ot-site`.
+Now that we've added the `ot-site` layout to our shadow DOM, the below is the composite DOM we've actually created. `ot-site` is in the light DOM,  and it hosts a shadow root that contains the markup we want built into `ot-site`.
 
 ```markup
 <ot-site>
