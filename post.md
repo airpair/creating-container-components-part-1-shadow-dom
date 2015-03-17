@@ -1,5 +1,7 @@
 From time immemorial, web developers have employed templates and includes in order to re-use site-wide layouts on different pages, without having to rewrite associated code.
 
+TODO: Insert Image (of `ot-site` with real content)
+
 Most developers making Single Page Applications no longer need re-use layouts on multiple pages--but we continue to have repeating layout structures, like content panels *within* our applications.
 
 At OpenTable, we're using an approach we call "micro-apps". Each micro-app is a separate SPA, so we quickly realized that in addition to content panels, we also still needed a way to efficiently share our top-level product layout and navigation...so we considered our options.
