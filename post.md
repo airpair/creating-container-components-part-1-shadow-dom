@@ -95,7 +95,7 @@ First things first, we have to write the HTML that will be built into our `ot-si
 </style>
 ```
 
-The anatomy of `ot-site` is a head, menu, body, and foot. The head contains the OpenTable logo and the foot contains a copyright statement. The head, menu, and body will contain content insertion points.  We'll also style `ot-site` so that it looks the way it is supposed to:
+The anatomy of `ot-site` is a head, menu, body, and foot. The head contains the OpenTable logo and the foot contains a copyright statement. The head, menu, and body will contain content insertion points.  We'll also style `ot-site` so that it looks the way it should:
 
 TODO: Insert Image (of empty `ot-site`)
 
