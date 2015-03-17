@@ -192,7 +192,7 @@ TODO: Insert image  (of plain unstyled "I render in...")
 
 ### Shadow Root
 
-Now, in order to make `ot-site` a shadow host, we have to create a shadow root on the element. The Shadow DOM specification defines a `createShadowRoot` method on elements which will do precisesly that.
+Now, in order to make `ot-site` a shadow host, we have to create a shadow root on the element. The Shadow DOM specification defines a `createShadowRoot` method on elements which will do precisely that.
 
 ```javascript
 var otSite = document.querySelector("ot-site");
