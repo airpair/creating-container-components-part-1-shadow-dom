@@ -66,7 +66,7 @@ That's a good, generic name: content insertion points.  That's exactly what we n
 
 In part 1 of 3 of this series, we'll implement `ot-site` and content insertion points using Web Components.
 
-Many template systems and frameworks provide functionality of this sort in slightly different ways, however.  Parts 2 and 3 will cover Angular 1.3 and Angular 2.0.
+Many template systems and frameworks provide functionality of this sort in slightly different ways, however.  Parts 2 and 3  by [Kara Erickson](https://twitter.com/karaforthewin) will cover Angular 1.3 and Angular 2.0.
 
 ## `ot-site`
 
@@ -120,7 +120,7 @@ Next, let's set up an example of how we'll use `ot-site` and add some sample con
 </ot-site>
 ```
 
-Now that we've decided what we need and outlined our markup, we'll have to:
+Now that we've chosen our mission, outlined what we need, and written our markup, we'll have to:
 
 1. Replace our comments with something real
 1. Match the content with its insertion point
@@ -155,7 +155,7 @@ If we turn on "Show user agent Shadow DOM" in Chrome developer tools, we can see
 
 The native element has a hidden shadow DOM associated with it. As you can see above, the shadow DOM is why we get a track and a handle when we use the range `input`.
 
-To keep things straight, from here on we'll call the regular, non-shadow DOM in which the `input` element lives the "light DOM".
+To keep things straight, from here on we'll call the regular, non-shadow DOM in which the `input` element lives the "**light DOM**".
 
 ### Shadow DOM
 
