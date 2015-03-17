@@ -2,9 +2,9 @@ From time immemorial, web developers have employed templates and includes in ord
 
 TODO: Insert Image (of `ot-site` with real content)
 
-Most developers making Single Page Applications no longer need re-use layouts on multiple pages--but we continue to have repeating layout structures, like content panels *within* our applications.
+Most developers making Single Page Applications no longer need to re-use layouts on multiple pages--but we continue to have repeating layout structures, like content panels *within* our applications.
 
-At OpenTable, we're using an approach we call "micro-apps". Each micro-app is a separate SPA, so we quickly realized that in addition to content panels, we also still needed a way to efficiently share our top-level product layout and navigation...so we considered our options.
+At OpenTable, we're using an approach we call "micro-apps". Each micro-app is a separate SPA. We quickly realized that in addition to content panels, we also still needed a way to efficiently share our top-level product layout and navigation... so we considered our options.
 
 ## Templates & Includes
 
@@ -356,13 +356,13 @@ We'll also need to add the attributes we defined above to our content in order t
 
 I mentioned that we'd need to match up the content and the insertion point.  But with the shadow DOM, the functionality [is native (sort of)](http://webcomponents.org/), so we actually don't have to deal with this ourselves.
 
-By adding our `content` tags and defining selectors in the shadow DOM and adding the same to our content in the light DOM, we've enabled a browser ([or polyfill](http://webcomponents.org/polyfills/)) to match everything up...as long as we didn't make any typos.
+By adding our `content` tags and defining selectors in the shadow DOM and adding the same to our content in the light DOM, we've enabled a browser ([or polyfill](http://webcomponents.org/polyfills/)) to match everything up... as long as we didn't make any typos.
 
 There's an algorithm behind up the native functionality, of course, and [you can read about it if you want](http://w3c.github.io/webcomponents/spec/shadow/#distribution-algorithms).  But, mostly, keep in mind that in parts 2 and 3 of this series we'll look again at correlating content and insertion points in Angular 1.3 and Angular 2.0.
 
 ### Rendering
 
-Which leaves us with only the result and how it renders--which is a very important thing to keep in mind when using a shadow DOM. Things only *render* as if the light DOM and shadow DOM are combined. 
+This leaves us with only the result and how it renders--which is a very important thing to keep in mind when using a shadow DOM. Things only *render* as if the light DOM and shadow DOM are combined. 
 
 #### Content Projection
 
