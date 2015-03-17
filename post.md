@@ -2,9 +2,9 @@ From time immemorial, web developers have employed templates and includes in ord
 
 TODO: Insert Image (of `ot-site` with real content)
 
-Most developers making Single Page Applications no longer need to re-use layouts on multiple pages--but we continue to have repeating layout structures, like content panels *within* our applications.
+Developers making Single Page Applications no longer need to re-use layouts on multiple pages--but we continue to have repeating layout structures, like content panels *within* our applications.
 
-At OpenTable, we're using an approach we call "micro-apps". Each micro-app is a separate SPA. We quickly realized that in addition to content panels, we also still needed a way to efficiently share our top-level product layout and navigation... so we considered our options.
+At OpenTable, we're using an approach we call "micro-apps"; each micro-app is a separate SPA. We quickly realized that in addition to content panels, we also still needed a way to efficiently share our top-level product layout and navigation... so we considered our options.
 
 ## Templates & Includes
 
@@ -56,7 +56,7 @@ All in all, native HTML elements are powerful. What better way to share our cust
 
 ### Content Containers
 
-Unlike an `input`, though, OpenTable's `ot-site` layout scaffold is a content container. It needs to behave more like a `div` does and wrap content so that, when employing `ot-site` as component users, we can insert blocks of arbitrary HTML into the scaffold. 
+Unlike an `input`, though, OpenTable's `ot-site` layout scaffold is a content container. It needs to behave more like a `div` does and wrap content so that, when employing `ot-site` as component users, we can insert blocks of arbitrary HTML into the scaffold containers. 
 
 More, `ot-site` needs to be able to accept content at more than one location. Clearly, for `ot-site`, we need more than attributes. We need `ot-site`'s template to have special points at which we can insert content, and we also need a way to label our content for a specific insertion point.
 
