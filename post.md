@@ -66,7 +66,7 @@ That's a good, generic name: content insertion points.  That's exactly what we n
 
 In part 1 of 3 of this series, we'll implement `ot-site` and content insertion points using Web Components.
 
-Many template systems and frameworks provide functionality of this sort in slightly different ways, however.  Parts 2 and 3  by [Kara Erickson](https://twitter.com/karaforthewin) will cover Angular 1.3 and Angular 2.0.
+Many frameworks provide functionality of this sort in slightly different ways, however.  Parts 2 and 3  by [Kara Erickson](https://twitter.com/karaforthewin) will cover Angular 1.3 and Angular 2.0.
 
 ## `ot-site`
 
