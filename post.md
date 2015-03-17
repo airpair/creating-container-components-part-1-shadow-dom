@@ -382,7 +382,7 @@ div {
 }
 ```
 
-We get red text, regardless of the rules in the shadow DOM's stylesheet, or how specific the selectors are, because the text doesn't move. 
+We'll get red text, like in the image below--regardless of the rules in the shadow DOM's stylesheet, or how specific the selectors are, because the text doesn't move.
 
 TODO: Insert Image (of red, filled `ot-site`)
 
@@ -396,9 +396,11 @@ div, footer {
 }
 ```
 
-The copyright text in our shadow DOM won't change.  Content projection is about more than style scoping, of course, but styles provide a great visual!  You can see [a full demo of content projection](http://codepen.io/morewry/pen/zxajGB/) as described here on CodePen.
+The copyright text in our shadow DOM won't change, as the below image illustrates.
 
 TODO: Insert Image (of correct/white, filled `ot-site`)
+
+Content projection is about more than style scoping, of course, but styles provide a great visual!  You can see [a full demo of content projection](http://codepen.io/morewry/pen/zxajGB/) as described here on CodePen.
 
 After we remove our educational red, content projection gives us exactly the end result we were aiming for--with the added benefit of a shadow DOM's encapsulation.  You can see [a full demo of `ot-site`](http://codepen.io/morewry/pen/azKWLQ/) as we implemented it here on CodePen.
 
