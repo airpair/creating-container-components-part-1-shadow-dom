@@ -354,11 +354,11 @@ We'll also need to add the attributes we defined above to our content in order t
 
 ### Matching
 
-I mentioned that we'd need to match up the content and the insertion point.  But with the shadow DOM, the functionality is native, so we actually don't have to deal with this ourselves.
+I mentioned that we'd need to match up the content and the insertion point.  But with the shadow DOM, the functionality [is native (sort of)](http://webcomponents.org/), so we actually don't have to deal with this ourselves.
 
-By adding our `content` tags and defining selectors in the shadow DOM and adding the same to our content in the light DOM, we've enabled the browser to match everything up...as long as we didn't make any typos.
+By adding our `content` tags and defining selectors in the shadow DOM and adding the same to our content in the light DOM, we've enabled a browser ([or polyfill](http://webcomponents.org/polyfills/)) to match everything up...as long as we didn't make any typos.
 
-There's an algorithm behind up the native functionality, of course, and [you can read about it if you want](http://w3c.github.io/webcomponents/spec/shadow/#distribution-algorithms).  But, mostly, keep in mind that in parts 2 and 3 of this series we'll return to how correlating content and insertion point works in of Angular 1.3 and Angular 2.0.
+There's an algorithm behind up the native functionality, of course, and [you can read about it if you want](http://w3c.github.io/webcomponents/spec/shadow/#distribution-algorithms).  But, mostly, keep in mind that in parts 2 and 3 of this series we'll look again at correlating content and insertion points in Angular 1.3 and Angular 2.0.
 
 ### Rendering
 
