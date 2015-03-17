@@ -254,7 +254,7 @@ otSite.shadowRoot.innerHTML = `
     </style>`
 ```
 
-Wondering about those backticks?  That's an ECMAScript 6 feature: template strings. When we use those we don't have to escape quotes in our `ot-site` HTML and we can use line breaks; it's very convenient for inline markup.
+Wondering about those backticks?  That's an ECMAScript 6 feature: template strings. When we use those we don't have to escape quotes in our `ot-site` HTML and we can use line breaks; it's very convenient for inline markup.  You'll have to use something like [Traceur](https://github.com/google/traceur-compiler) if you want to use template strings, though.
 
 ### Composed DOM
 
