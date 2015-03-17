@@ -145,12 +145,11 @@ If we turn on "Show user agent Shadow DOM" in Chrome developer tools, we can see
 
 ```markup
 <input type="range" />
-
-#shadow-root (user-agent)
-  <div id="track">
-    <div id="thumb">
+    #shadow-root (user-agent)
+        <div id="track">
+            <div id="thumb">
+        </div>
     </div>
-  </div>
 ```
 
 The native element has a hidden shadow DOM associated with it. As you can see above, the shadow DOM is why we get a track and a handle when we use the range `input`.
