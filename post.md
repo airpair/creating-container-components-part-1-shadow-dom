@@ -50,6 +50,10 @@ Why a UI component? Well, it's inspired by how native HTML elements work. For ex
 
 As a result, when we use the range `input`, we don't have to write markup to make the separate parts of the range slider: the track and handle. No additional styles are required to make either the track look like a track or the handle look like a handle. Nor do we need to write any script to move the handle along the track or set a corresponding `value` property. All of that comes built in. 
 
+![UI Component Puzzle](https://8604d17a51d354cba084d27f632b78fe46e70205.googledrive.com/host/0Bws_6WaNR1DWelh6X1hLcTlBR1E/puzzle-square.png)
+
+_CC-BY-SA Web UI Puzzle by Barry M Wong & Rachael L Moore_
+
 Furthermore, the `input` tag also exposes a way to control options relevant to a range slider, like min and max values. Setting these options change the slider's behavior—again, without additional scripting.
 
 All in all, native HTML elements are powerful. What better way to share our custom functionality on the web than to emulate them?
