@@ -383,6 +383,8 @@ div {
 }
 ```
 
+![light DOM red text](https://content-na.drive.amazonaws.com/cdproxy/templink/9k4Fzns8r52PgzuvMhTZokkdv3NFgTEQJ_P3dPuLaBsLAYspN)
+
 We'll get red text, like in the image below--regardless of the rules in the shadow DOM's stylesheet, or how specific the selectors are, because the text doesn't move.
 
 ![ot-site with red text](https://content-na.drive.amazonaws.com/cdproxy/templink/EJBIvBuiVe-9NEO4JZVnpGg0vwr0LisWr8hZ7a12dW8LAYspN)
