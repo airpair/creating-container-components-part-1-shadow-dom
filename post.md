@@ -139,7 +139,7 @@ Web Components aim to provide content insertion point functionality natively wit
 
 An interesting thing about the Shadow DOM is that it formally describes how native elements already work. A shadow DOM is a large part of how the range `input` does all the things it does.
 
-TODO: Insert Image (of chrome dev tools setting)
+![Chrome Dev Tools](https://content-na.drive.amazonaws.com/cdproxy/templink/J_SBruNHgaqBkM53mgTKebm57v2ILrtJ9IEnz78HqO4LAYspN)
 
 If we turn on "Show user agent Shadow DOM" in Chrome developer tools, we can see a secret DOM that wasn't visible to us before. 
 
