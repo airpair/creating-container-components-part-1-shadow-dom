@@ -165,7 +165,7 @@ To keep things straight, from here on we'll call the regular, non-shadow DOM in 
 
 ### Shadow DOM
 
-And what exactly is a shadow DOM? It's a bit like a document fragment, however, a shadow DOM is a complete, separate DOM. Even when it's being rendered, a shadow DOM actually remains separate in many practical ways: 
+And what exactly is a shadow DOM? It's a bit like a [document fragment](https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment), however, a shadow DOM is a complete, separate DOM. Even when it's being rendered, a shadow DOM actually remains separate in many practical ways: 
 
 - Scripts in a shadow DOM are encapsulated, 
 
