@@ -401,11 +401,13 @@ div, footer {
 
 The copyright text in our shadow DOM won't change, as the below image illustrates.
 
-![ot-site with correct test content](https://content-na.drive.amazonaws.com/cdproxy/templink/Vhia80GC2cpU23BgFgO373vDAczFqhVwpzrUDS8IL-ILAYspN)
+![ot-site with red text](https://content-na.drive.amazonaws.com/cdproxy/templink/EJBIvBuiVe-9NEO4JZVnpGg0vwr0LisWr8hZ7a12dW8LAYspN)
 
 Content projection is about more than style scoping, of course, but styles provide a great visual!  You can see [a full demo of content projection](http://codepen.io/morewry/pen/zxajGB/) as described here on CodePen.
 
 After we remove our educational red, content projection gives us exactly the end result we were aiming for--with the added benefit of a shadow DOM's encapsulation.  You can see [a full demo of `ot-site`](http://codepen.io/morewry/pen/azKWLQ/) as we implemented it here on CodePen.
+
+![ot-site with correct test content](https://content-na.drive.amazonaws.com/cdproxy/templink/Vhia80GC2cpU23BgFgO373vDAczFqhVwpzrUDS8IL-ILAYspN)
 
 ### Conclusion
 
