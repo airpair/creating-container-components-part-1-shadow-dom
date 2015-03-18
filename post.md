@@ -2,7 +2,7 @@ From time immemorial, web developers have employed templates and includes in ord
 
 TODO: Insert Image (of `ot-site` with real content)
 
-Developers making Single Page Applications no longer need to re-use layouts on multiple pages--but we continue to have repeating layout structures, like content panels *within* our applications.
+Developers making Single Page Applications no longer need to re-use layouts on multiple pages--but we continue to have repeating layout structures, like content panels, *within* our applications.
 
 At OpenTable, we're using an approach we call "micro-apps"; each micro-app is a separate SPA. We quickly realized that in addition to content panels, we also still needed a way to efficiently share our top-level product layout and navigation... so we considered our options.
 
