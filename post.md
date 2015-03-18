@@ -297,7 +297,7 @@ Now that we've added the `ot-site` layout to our shadow DOM, the below is the co
 
 As a result, the image below is what we get when we use the `ot-site` tag. We get six tags, representing head, logo, menu, body, foot, and copyright as well as all the styles to lay them out for the price of a single tag.
 
-TODO: Insert Image (of empty `ot-site`)
+![ot-site empty scaffold](https://content-na.drive.amazonaws.com/cdproxy/templink/lzF-9kSfZcO8jAaUpD2kgnO7pc3FRmv6-J2Hx6Kmz6cLAYspN?viewBox=1440)
 
 But we still need to be able to add our content, so let's address those placeholder comments.
 
@@ -372,6 +372,8 @@ But it isn't. For all the purposes mentioned earlier--script execution context, 
 It's useful to think of this as if they're each processed separately before ever rendering together.
 
 TODO: Insert Image (of empty `ot-site` and plain unstyled "I render in...")
+
+![ot-site empty scaffold](https://content-na.drive.amazonaws.com/cdproxy/templink/lzF-9kSfZcO8jAaUpD2kgnO7pc3FRmv6-J2Hx6Kmz6cLAYspN?viewBox=1440)
 
 So, say we had a style in the light DOM that made the text red. What happens?
 
