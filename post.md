@@ -52,7 +52,7 @@ As a result, when we use the range `input`, we don't have to write markup to mak
 
 <p style="text-align: center;">
 ![UI Component Puzzle](https://8604d17a51d354cba084d27f632b78fe46e70205.googledrive.com/host/0Bws_6WaNR1DWelh6X1hLcTlBR1E/puzzle-square.png)
-<small style="display:block;text-align:center;">_CC-BY-SA Web UI Puzzle by Barry M Wong & Rachael L Moore_</small>
+<small style="display:block;text-align:center;">_CC-BY-SA [Web UI Puzzle](https://docs.google.com/presentation/d/1ozBlL1MXxyYPSLzIaMtHO1YF-tHkEzKFsvt4s3rBBt0/edit) by [Barry M Wong](http://barrymwong.com/) & [Rachael L Moore](http://morewry.com)_</small>
 </p>
 
 Furthermore, the `input` tag also exposes a way to control options relevant to a range slider, like min and max values. Setting these options change the slider's behavior—again, without additional scripting.
