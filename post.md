@@ -123,8 +123,10 @@ Next, let's set up an example of how we'll use `ot-site` and add some sample con
 Now that we've chosen our mission, outlined what we need, and written our markup, we'll have to:
 
 1. Replace our comments with something real
-1. Match the content with its insertion point
-2. Combine and render the result
+
+2. Match the content with its insertion point
+
+3. Combine and render the result
 
 
 ## Web Components
@@ -161,7 +163,9 @@ To keep things straight, from here on we'll call the regular, non-shadow DOM in 
 And what exactly is a shadow DOM? It's a bit like a document fragment, however, a shadow DOM is a complete, separate DOM. Even when it's being rendered, a shadow DOM actually remains separate in many practical ways: 
 
 - Scripts in a shadow DOM are encapsulated, 
+
 - Events in a shadow DOM are re-targeted,
+
 - And styles in a shadow DOM are scoped.
 
 ### Shadow Host
