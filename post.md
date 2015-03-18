@@ -221,7 +221,7 @@ Creating and hosting a shadow DOM is as simple as that.  The result we'll see in
 
 And, from this point on, any light DOM descendants of our gracious shadow host won't render. So our sample content is all missing now, which leaves our page looking like this:
 
-TODO: Insert Image (of blank white page)
+![missing content](https://content-na.drive.amazonaws.com/cdproxy/templink/IDoYIpNECm1BRZhHoLspz8HQi-TXww4jjWkgKniHBRQLAYspN)
 
 You may be wondering how that could possibly be useful. Well, now that we have a shadow DOM, we can add elements to it--and those will render.
 
@@ -370,8 +370,6 @@ What is actually occurring is something people are calling content projection. T
 But it isn't. For all the purposes mentioned earlier--script execution context, events, and styles--our light DOM content remains in the light DOM and our shadow DOM content is still totally isolated in the shadow DOM. 
 
 It's useful to think of this as if they're each processed separately before ever rendering together.
-
-TODO: Insert Image (of empty `ot-site` and plain unstyled "I render in...")
 
 ![light DOM content](https://content-na.drive.amazonaws.com/cdproxy/templink/VKTQbBMhqWWwQsh0rMv4w_NHEfg0Iol2Op9-jNc3gNgLAYspN)
 
