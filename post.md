@@ -361,7 +361,7 @@ There's an algorithm behind up the native functionality, of course, and [you can
 
 ### Rendering
 
-This leaves us with only the result and how it renders--which is a very important thing to keep in mind when using a shadow DOM. Things only *render* as if the light DOM and shadow DOM are combined. 
+This leaves us with only the result and how it renders—which is a very important thing to keep in mind when using a shadow DOM. Things only *render* as if the light DOM and shadow DOM are combined. 
 
 #### Content Projection
 
@@ -412,4 +412,3 @@ After we remove our educational red, content projection gives us exactly the end
 ### Conclusion
 
 That covers the process of implementing the `ot-site` layout scaffold using web components and native functionality. Next, head over to Kara's articles on Angular 1.3 and Angular 2.0.
-
