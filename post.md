@@ -362,7 +362,7 @@ We'll also need to add the attributes we defined above to our content in order t
 
 ### Matching
 
-I mentioned that we'd need to match up the content and the insertion point.  But with the shadow DOM, the functionality [is native (sort of)](http://caniuse.com/#search=web%20components), so we actually don't have to deal with this ourselves.
+I mentioned that we'd need to match up the content and the insertion point.  But with the shadow DOM, the functionality [is native (sort of, we hope)](http://caniuse.com/#search=web%20components), so we actually don't have to deal with this ourselves.
 
 By adding our `content` tags and defining selectors in the shadow DOM and adding the same to our content in the light DOM, we've enabled a browser ([or polyfill](http://webcomponents.org/polyfills/)) to match everything up... as long as we didn't make any typos.
 
