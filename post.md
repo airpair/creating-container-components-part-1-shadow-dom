@@ -66,7 +66,7 @@ That's a good, generic name: content insertion points.  That's exactly what we n
 
 In part 1 of 3 of this series, we'll implement `ot-site` and content insertion points using Web Components.
 
-Many frameworks provide functionality of this sort in slightly different ways, however.  Parts 2 and 3  by [Kara Erickson](https://twitter.com/karaforthewin) will cover Angular 1.3 and Angular 2.0.
+Many frameworks provide functionality of this sort in slightly different ways, however.  Future installments by [Kara Erickson](https://twitter.com/karaforthewin) will cover [Angular 1.3](https://www.airpair.com/posts/review/5504bb2ea9f6660c00909462) and Angular 2.0.
 
 ## `ot-site`
 
@@ -411,4 +411,4 @@ After we remove our educational red, content projection gives us exactly the end
 
 ### Conclusion
 
-That covers the process of implementing the `ot-site` layout scaffold using web components and native functionality. Next, head over to Kara's articles on Angular 1.3 and Angular 2.0.
+That covers the process of implementing the `ot-site` layout scaffold using web components and native functionality. Next, head over to Kara's articles on [content container components in Angular 1.3](https://www.airpair.com/posts/review/5504bb2ea9f6660c00909462) and content container components in Angular 2.0.
