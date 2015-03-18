@@ -397,7 +397,7 @@ div, footer {
 
 The copyright text in our shadow DOM won't change, as the below image illustrates.
 
-TODO: Insert Image (of correct/white, filled `ot-site`)
+![ot-site with correct test content](https://content-na.drive.amazonaws.com/cdproxy/templink/Vhia80GC2cpU23BgFgO373vDAczFqhVwpzrUDS8IL-ILAYspN?viewBox=1440)
 
 Content projection is about more than style scoping, of course, but styles provide a great visual!  You can see [a full demo of content projection](http://codepen.io/morewry/pen/zxajGB/) as described here on CodePen.
 
