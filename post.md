@@ -412,3 +412,6 @@ After we remove our educational red, content projection gives us exactly the end
 ### Conclusion
 
 That covers the process of implementing the `ot-site` layout scaffold using web components and native functionality. Next, head over to Kara's articles on [content container components in Angular 1.3](https://www.airpair.com/posts/review/5504bb2ea9f6660c00909462) and content container components in Angular 2.0.
+
+Also, if you're interested in more about UI components, we've given two talks about OpenTable's UI component implementations with lots of related information.  Check out our talk about [content container components](http://2015.ng-conf.morewry.com/) from ng-conf 2015 and our talk about [reusable UI components](http://angular.morewry.com/jan-2015/) from the AngularJS-MTV meetup.
+
