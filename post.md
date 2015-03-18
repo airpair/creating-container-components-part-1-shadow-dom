@@ -297,7 +297,7 @@ Now that we've added the `ot-site` layout to our shadow DOM, the below is the co
 
 As a result, the image below is what we get when we use the `ot-site` tag. We get six tags, representing head, logo, menu, body, foot, and copyright as well as all the styles to lay them out for the price of a single tag.
 
-![ot-site empty scaffold](https://content-na.drive.amazonaws.com/cdproxy/templink/lzF-9kSfZcO8jAaUpD2kgnO7pc3FRmv6-J2Hx6Kmz6cLAYspN?viewBox=1440)
+![ot-site empty scaffold](https://content-na.drive.amazonaws.com/cdproxy/templink/lzF-9kSfZcO8jAaUpD2kgnO7pc3FRmv6-J2Hx6Kmz6cLAYspN)
 
 But we still need to be able to add our content, so let's address those placeholder comments.
 
@@ -373,7 +373,7 @@ It's useful to think of this as if they're each processed separately before ever
 
 TODO: Insert Image (of empty `ot-site` and plain unstyled "I render in...")
 
-![ot-site empty scaffold](https://content-na.drive.amazonaws.com/cdproxy/templink/lzF-9kSfZcO8jAaUpD2kgnO7pc3FRmv6-J2Hx6Kmz6cLAYspN?viewBox=1440)
+![ot-site empty scaffold](https://content-na.drive.amazonaws.com/cdproxy/templink/lzF-9kSfZcO8jAaUpD2kgnO7pc3FRmv6-J2Hx6Kmz6cLAYspN)
 
 So, say we had a style in the light DOM that made the text red. What happens?
 
@@ -385,7 +385,7 @@ div {
 
 We'll get red text, like in the image below--regardless of the rules in the shadow DOM's stylesheet, or how specific the selectors are, because the text doesn't move.
 
-TODO: Insert Image (of red, filled `ot-site`)
+![ot-site with red text](https://content-na.drive.amazonaws.com/cdproxy/templink/EJBIvBuiVe-9NEO4JZVnpGg0vwr0LisWr8hZ7a12dW8LAYspN)
 
 The `div`s and their text contents are still in the light DOM and can, naturally, be styled by any CSS also in the light DOM.  But not by CSS in shadow DOM: `<div head>`, for example, won't be affected by any rules for `header div`.
 
@@ -399,7 +399,7 @@ div, footer {
 
 The copyright text in our shadow DOM won't change, as the below image illustrates.
 
-![ot-site with correct test content](https://content-na.drive.amazonaws.com/cdproxy/templink/Vhia80GC2cpU23BgFgO373vDAczFqhVwpzrUDS8IL-ILAYspN?viewBox=1440)
+![ot-site with correct test content](https://content-na.drive.amazonaws.com/cdproxy/templink/Vhia80GC2cpU23BgFgO373vDAczFqhVwpzrUDS8IL-ILAYspN)
 
 Content projection is about more than style scoping, of course, but styles provide a great visual!  You can see [a full demo of content projection](http://codepen.io/morewry/pen/zxajGB/) as described here on CodePen.
 
