@@ -97,7 +97,7 @@ First things first, we have to write the HTML that will be built into our `ot-si
 
 The anatomy of `ot-site` is a head, menu, body, and foot. The head contains the OpenTable logo and the foot contains a copyright statement. The head, menu, and body will contain content insertion points.  We'll also style `ot-site` so that it looks the way it should:
 
-TODO: Insert Image (of empty `ot-site`)
+![ot-site empty scaffold](https://content-na.drive.amazonaws.com/cdproxy/templink/lzF-9kSfZcO8jAaUpD2kgnO7pc3FRmv6-J2Hx6Kmz6cLAYspN)
 
 ### Component Use
 
