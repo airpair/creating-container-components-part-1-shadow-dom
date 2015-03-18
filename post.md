@@ -2,7 +2,7 @@ From time immemorial, web developers have employed templates and includes in ord
 
 TODO: Insert Image (of `ot-site` with real content)
 
-Developers making Single Page Applications no longer need to re-use layouts on multiple pages--but we continue to have repeating layout structures, like content panels, *within* our applications.
+Developers making Single Page Applications no longer need to re-use layouts on multiple pages—but we continue to have repeating layout structures, like content panels, *within* our applications.
 
 At OpenTable, we're using an approach we call "micro-apps"; each micro-app is a separate SPA. We quickly realized that in addition to content panels, we also still needed a way to efficiently share our top-level product layout and navigation... so we considered our options.
 
@@ -13,7 +13,7 @@ Long, long ago we used backend template systems, which allowed us to separate an
 ```markup
 <!-- #include virtual="head.html" -->
 <!-- #include virtual="menu.html" -->
-I render in <!--#echo var="CONTAINER" -->.
+I render in <!-- #echo var="CONTAINER" -->.
 <!-- #include virtual="foot.html" -->
 ```
 
@@ -50,7 +50,7 @@ Why a UI component? Well, it's inspired by how native HTML elements work. For ex
 
 As a result, when we use the range `input`, we don't have to write markup to make the separate parts of the range slider: the track and handle. No additional styles are required to make either the track look like a track or the handle look like a handle. Nor do we need to write any script to move the handle along the track or set a corresponding `value` property. All of that comes built in. 
 
-Furthermore, the `input` tag also exposes a way to control options relevant to a range slider, like min and max values. Setting these options change the slider's behavior--again, without additional scripting.
+Furthermore, the `input` tag also exposes a way to control options relevant to a range slider, like min and max values. Setting these options change the slider's behavior—again, without additional scripting.
 
 All in all, native HTML elements are powerful. What better way to share our custom functionality on the web than to emulate them?
 
@@ -97,7 +97,7 @@ First things first, we have to write the HTML that will be built into our `ot-si
 
 The anatomy of `ot-site` is a head, menu, body, and foot. The head contains the OpenTable logo and the foot contains a copyright statement. The head, menu, and body will contain content insertion points.  We'll also style `ot-site` so that it looks the way it should:
 
-![ot-site empty scaffold](https://content-na.drive.amazonaws.com/cdproxy/templink/lzF-9kSfZcO8jAaUpD2kgnO7pc3FRmv6-J2Hx6Kmz6cLAYspN)
+![ot-site empty scaffold](https://8604d17a51d354cba084d27f632b78fe46e70205.googledrive.com/host/0Bws_6WaNR1DWelh6X1hLcTlBR1E/otsite-empty.png)
 
 ### Component Use
 
@@ -187,7 +187,7 @@ With web components support, we're able to create our own shadow DOM. But we  st
 
 Before making `ot-site` a shadow host, this markup gives us:
 
-![light DOM content](https://content-na.drive.amazonaws.com/cdproxy/templink/VKTQbBMhqWWwQsh0rMv4w_NHEfg0Iol2Op9-jNc3gNgLAYspN)
+![light DOM content](https://8604d17a51d354cba084d27f632b78fe46e70205.googledrive.com/host/0Bws_6WaNR1DWelh6X1hLcTlBR1E/lightdom-initial.png)
 
 ### Shadow Root
 
@@ -221,13 +221,13 @@ Creating and hosting a shadow DOM is as simple as that.  The result we'll see in
 
 And, from this point on, any light DOM descendants of our gracious shadow host won't render. So our sample content is all missing now, which leaves our page looking like this:
 
-![missing content](https://content-na.drive.amazonaws.com/cdproxy/templink/IDoYIpNECm1BRZhHoLspz8HQi-TXww4jjWkgKniHBRQLAYspN)
+![missing content](https://8604d17a51d354cba084d27f632b78fe46e70205.googledrive.com/host/0Bws_6WaNR1DWelh6X1hLcTlBR1E/lightdom-empty.png)
 
-You may be wondering how that could possibly be useful. Well, now that we have a shadow DOM, we can add elements to it--and those will render.
+You may be wondering how that could possibly be useful. Well, now that we have a shadow DOM, we can add elements to it—and those will render.
 
 ### Filling the Shadow DOM
 
-That means we can add the built-in parts of `ot-site`--its head, logo, menu, body, foot, copyright, and styles--to our shadow root. 
+That means we can add the built-in parts of `ot-site`—its head, logo, menu, body, foot, copyright, and styles—to our shadow root. 
 
 We could dress this up with more web component goodies like custom element registration and a template tag. But for this tutorial, we'll stick with the barest essentials and we'll just set `innerHTML` to add `ot-site`'s markup to the shadow root.
 
@@ -297,7 +297,7 @@ Now that we've added the `ot-site` layout to our shadow DOM, the below is the co
 
 As a result, the image below is what we get when we use the `ot-site` tag. We get six tags, representing head, logo, menu, body, foot, and copyright as well as all the styles to lay them out for the price of a single tag.
 
-![ot-site empty scaffold](https://content-na.drive.amazonaws.com/cdproxy/templink/lzF-9kSfZcO8jAaUpD2kgnO7pc3FRmv6-J2Hx6Kmz6cLAYspN)
+![ot-site empty scaffold](https://8604d17a51d354cba084d27f632b78fe46e70205.googledrive.com/host/0Bws_6WaNR1DWelh6X1hLcTlBR1E/otsite-empty.png)
 
 But we still need to be able to add our content, so let's address those placeholder comments.
 
@@ -365,15 +365,11 @@ This leaves us with only the result and how it renders—which is a very importa
 
 #### Content Projection
 
-What is actually occurring is something people are calling content projection. The user's light DOM content is projected, like a movie onto the big screen, onto the insertion point--which makes it render in some ways as if it were there.
+What is actually occurring is something people are calling content projection. The user's light DOM content is projected, like a movie onto the big screen, onto the insertion point—which makes it render in some ways as if it were there.
 
-But it isn't. For all the purposes mentioned earlier--script execution context, events, and styles--our light DOM content remains in the light DOM and our shadow DOM content is still totally isolated in the shadow DOM. 
+But it isn't. For all the purposes mentioned earlier—script execution context, events, and styles—our light DOM content remains in the light DOM and our shadow DOM content is still totally isolated in the shadow DOM. 
 
 It's useful to think of this as if they're each processed separately before ever rendering together.
-
-![light DOM content](https://content-na.drive.amazonaws.com/cdproxy/templink/VKTQbBMhqWWwQsh0rMv4w_NHEfg0Iol2Op9-jNc3gNgLAYspN)
-
-![ot-site empty scaffold](https://content-na.drive.amazonaws.com/cdproxy/templink/lzF-9kSfZcO8jAaUpD2kgnO7pc3FRmv6-J2Hx6Kmz6cLAYspN)
 
 So, say we had a style in the light DOM that made the text red. What happens?
 
@@ -383,11 +379,11 @@ div {
 }
 ```
 
-![light DOM content in red](https://content-na.drive.amazonaws.com/cdproxy/templink/9k4Fzns8r52PgzuvMhTZokkdv3NFgTEQJ_P3dPuLaBsLAYspN)
+![light DOM content in red](https://8604d17a51d354cba084d27f632b78fe46e70205.googledrive.com/host/0Bws_6WaNR1DWelh6X1hLcTlBR1E/lightdom-red.png)
 
-We'll get red text, like in the image below--regardless of the rules in the shadow DOM's stylesheet, or how specific the selectors are, because the text doesn't move.
+We'll get red text, like in the image below—regardless of the rules in the shadow DOM's stylesheet, or how specific the selectors are, because the text doesn't move.
 
-![ot-site with red text](https://content-na.drive.amazonaws.com/cdproxy/templink/EJBIvBuiVe-9NEO4JZVnpGg0vwr0LisWr8hZ7a12dW8LAYspN)
+![ot-site with red text](https://8604d17a51d354cba084d27f632b78fe46e70205.googledrive.com/host/0Bws_6WaNR1DWelh6X1hLcTlBR1E/otsite-contentprojection.png)
 
 The `div`s and their text contents are still in the light DOM and can, naturally, be styled by any CSS also in the light DOM.  But not by CSS in shadow DOM: `<div head>`, for example, won't be affected by any rules for `header div`.
 
@@ -401,13 +397,13 @@ div, footer {
 
 The copyright text in our shadow DOM won't change, as the below image illustrates.
 
-![ot-site with red text](https://content-na.drive.amazonaws.com/cdproxy/templink/EJBIvBuiVe-9NEO4JZVnpGg0vwr0LisWr8hZ7a12dW8LAYspN)
+![ot-site with red text](https://8604d17a51d354cba084d27f632b78fe46e70205.googledrive.com/host/0Bws_6WaNR1DWelh6X1hLcTlBR1E/otsite-contentprojection.png)
 
 Content projection is about more than style scoping, of course, but styles provide a great visual!  You can see [a full demo of content projection](http://codepen.io/morewry/pen/zxajGB/) as described here on CodePen.
 
-After we remove our educational red, content projection gives us exactly the end result we were aiming for--with the added benefit of a shadow DOM's encapsulation.  You can see [a full demo of `ot-site`](http://codepen.io/morewry/pen/azKWLQ/) as we implemented it here on CodePen.
+After we remove our educational red, content projection gives us exactly the end result we were aiming for—with the added benefit of a shadow DOM's encapsulation.  You can see [a full demo of `ot-site`](http://codepen.io/morewry/pen/azKWLQ/) as we implemented it here on CodePen.
 
-![ot-site with correct test content](https://content-na.drive.amazonaws.com/cdproxy/templink/Vhia80GC2cpU23BgFgO373vDAczFqhVwpzrUDS8IL-ILAYspN)
+![ot-site with correct test content](https://8604d17a51d354cba084d27f632b78fe46e70205.googledrive.com/host/0Bws_6WaNR1DWelh6X1hLcTlBR1E/otsite-final.png)
 
 ### Conclusion
 
