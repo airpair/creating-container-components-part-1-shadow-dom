@@ -1,6 +1,6 @@
 From time immemorial, web developers have employed templates and includes in order to re-use site-wide layouts on different pages, without having to rewrite associated code.
 
-TODO: Insert Image (of `ot-site` with real content)
+![OpenTable Guest Center](https://8604d17a51d354cba084d27f632b78fe46e70205.googledrive.com/host/0Bws_6WaNR1DWelh6X1hLcTlBR1E/otsite-realthing.png)
 
 Developers making Single Page Applications no longer need to re-use layouts on multiple pages—but we continue to have repeating layout structures, like content panels, *within* our applications.
 
