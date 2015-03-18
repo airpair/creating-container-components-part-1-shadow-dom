@@ -187,7 +187,7 @@ With web components support, we're able to create our own shadow DOM. But we  st
 
 Before making `ot-site` a shadow host, this markup gives us:
 
-TODO: Insert image  (of plain unstyled "I render in...")
+![light DOM content](https://content-na.drive.amazonaws.com/cdproxy/templink/VKTQbBMhqWWwQsh0rMv4w_NHEfg0Iol2Op9-jNc3gNgLAYspN)
 
 ### Shadow Root
 
@@ -373,6 +373,8 @@ It's useful to think of this as if they're each processed separately before ever
 
 TODO: Insert Image (of empty `ot-site` and plain unstyled "I render in...")
 
+![light DOM content](https://content-na.drive.amazonaws.com/cdproxy/templink/VKTQbBMhqWWwQsh0rMv4w_NHEfg0Iol2Op9-jNc3gNgLAYspN)
+
 ![ot-site empty scaffold](https://content-na.drive.amazonaws.com/cdproxy/templink/lzF-9kSfZcO8jAaUpD2kgnO7pc3FRmv6-J2Hx6Kmz6cLAYspN)
 
 So, say we had a style in the light DOM that made the text red. What happens?
@@ -383,7 +385,7 @@ div {
 }
 ```
 
-![light DOM red text](https://content-na.drive.amazonaws.com/cdproxy/templink/9k4Fzns8r52PgzuvMhTZokkdv3NFgTEQJ_P3dPuLaBsLAYspN)
+![light DOM content in red](https://content-na.drive.amazonaws.com/cdproxy/templink/9k4Fzns8r52PgzuvMhTZokkdv3NFgTEQJ_P3dPuLaBsLAYspN)
 
 We'll get red text, like in the image below--regardless of the rules in the shadow DOM's stylesheet, or how specific the selectors are, because the text doesn't move.
 
