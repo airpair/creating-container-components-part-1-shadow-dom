@@ -146,7 +146,7 @@ Web Components aim to provide content insertion point functionality natively wit
 
 An interesting thing about the Shadow DOM is that it formally describes how native elements already work. A shadow DOM is a large part of how the range `input` does all the things it does.
 
-![Chrome Dev Tools](https://content-na.drive.amazonaws.com/cdproxy/templink/J_SBruNHgaqBkM53mgTKebm57v2ILrtJ9IEnz78HqO4LAYspN)
+![Chrome Dev Tools - Show User Agent Shadow DOM](https://8604d17a51d354cba084d27f632b78fe46e70205.googledrive.com/host/0Bws_6WaNR1DWelh6X1hLcTlBR1E/show-user-agent-shadow-dom.png)
 
 If we turn on "Show user agent Shadow DOM" in Chrome developer tools, we can see a secret DOM that wasn't visible to us before. 
 
